@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">slider-flutter</string>
+    <string name="facebook_app_id">896418760916269</string>
+    <string name="fb_login_protocol_scheme">fb896418760916269</string>
+</resources>
