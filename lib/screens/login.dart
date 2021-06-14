@@ -224,6 +224,7 @@ class __SignInFormState extends State<_SignInForm> {
         builder: (context, state) {
 
           return SingleChildScrollView(
+            physics: new ClampingScrollPhysics(),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[

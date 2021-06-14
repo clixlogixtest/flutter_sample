@@ -248,7 +248,8 @@ class LoginBloc extends Bloc<LoginEvent, LoginState> {
           // Consumer API keys
           apiKey: Keys.TWITTER_API_KEY,
           apiSecretKey: Keys.TWITTER_API_SECRET_KEY,
-          redirectURI: 'twittersdk://',
+         // redirectURI: 'twittersdk://',
+          redirectURI: Platform.isIOS ? 'twitterkit-YV88fGxUlVpwh4BCY9sIYyz1R://' : 'twittersdk://'
         );
         final authResult = await twitterLogin.login();
         switch (authResult.status) {
